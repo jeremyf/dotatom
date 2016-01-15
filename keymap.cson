@@ -1,0 +1,21 @@
+'.platform-darwin atom-workspace atom-text-editor:not(.mini)':
+  'ctrl-cmd-z': 'unset!'
+'.platform-darwin atom-workspace':
+  'ctrl-cmd-z': 'unset!'
+'atom-text-editor':
+  'ctrl-k': 'unset!'
+'atom-workspace':
+  'ctrl-cmd-z': 'native!'
+  'cmd-k cmd-c': 'git-plus:commit'
+  'cmd-k cmd-a': 'git-plus:add'
+  'cmd-k cmd-z': 'git-plus:add-all'
+  'cmd-k cmd-s': 'git-plus:status'
+  'cmd-k cmd-p': 'git-plus:push'
+  'cmd-k cmd-r': 'git-plus:pull-using-rebase'
+  'ctrl-l': 'go-to-line:toggle'
+  'cmd-.': 'rails-rspec:toggle-spec-file'
+  'cmd-ctrl-w': 'tabs:close-all-tabs'
+  'ctrl-w': 'editor:select-word'
+  'ctrl-alt-cmd-z': 'zen:toggle'
+  'ctrl-k': 'editor:delete-to-end-of-line'
+  'shift-ctrl-i': 'window:toggle-invisibles'

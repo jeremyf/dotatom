@@ -1,0 +1,209 @@
+"*":
+  Zen: {}
+  "atom-beautify":
+    language_php_disabled: true
+    language_python_disabled: true
+    language_ruby_default_beautifier: "Ruby Beautify"
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+  "atom-pair":
+    hipchat_room_name: "DLT"
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-ctags":
+    debug: true
+    disableBuiltinProvider: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+  "autocomplete-ruby": {}
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor:
+          alpha: 0
+          blue: 0
+          green: 0
+          red: 0
+        borderColor:
+          alpha: 0.55
+          blue: 45
+          green: 194
+          red: 234
+        borderStyle: "bordered-box"
+      blinkOn:
+        backgroundColor:
+          alpha: 0.55
+          blue: 45
+          green: 194
+          red: 234
+        borderColor:
+          alpha: 0
+          blue: 0
+          green: 0
+          red: 0
+        borderStyle: "none"
+        borderWidth: 0
+      cursorLineFix: true
+  "color-picker":
+    preferredFormat: "HEX"
+    randomColor: false
+  core:
+    disabledPackages: [
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-python"
+      "language-toml"
+      "language-java"
+      "language-csharp"
+      "language-clojure"
+      "language-c"
+      "project-ring"
+      "sourcegraph-atom"
+      "go-to-spec"
+      "multi-cursor-plus"
+      "linter-rubocop"
+      "git-blame-plus"
+      "chary-tree-view"
+      "block-cursor"
+      "jsonlint"
+      "atom-pair"
+      "cargo-test-runner"
+      "git-log"
+      "language-rust"
+      "racer"
+      "rust-api-docs-helper"
+      "tree-view-git-modified"
+      "wrap-guide"
+      "wrap-guide"
+      "linter-rust"
+      "merge-conflicts"
+      "travis-ci-status"
+      "terminal-status"
+      "autocomplete"
+      "autocomplete-ruby"
+      "ctags-status"
+      "symbols-tree-view"
+      "pigments"
+      "keyboard-scroll"
+      "color-picker"
+      "wordcount"
+      "autocomplete-ctags"
+      "atom-ctags"
+      "incremental-search"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "tags"
+      ".tag*"
+    ]
+    themes: [
+      "unity-ui"
+      "ruby-blue-syntax"
+    ]
+  "ctags-status": {}
+  editor:
+    fontFamily: "Mensch-Regular"
+    invisibles: {}
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140
+    showInvisibles: true
+  "exception-reporting":
+    userId: "3d6d5bc2-8a42-8d9a-1a35-e7bbbb8ff132"
+  "gist-it":
+    userToken: "5ae4c6ca80b970dea795202842988b3f73a0c062"
+  "git-blame-plus": {}
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-history": {}
+  "git-plus": {}
+  "highlight-line":
+    enableSelectionBorder: true
+    enableUnderline: true
+    hideHighlightOnSelect: true
+  jumpy:
+    fontSize: 0.8
+    highContrast: true
+  "keyboard-scroll": {}
+  linter:
+    showErrorTabLine: true
+  "linter-rubocop": {}
+  "linter-ruby":
+    rubyExecutablePath: "/Users/jfriesen/.rvm/rubies/ruby-2.2.2/bin/ruby"
+  "markdown-preview":
+    useGitHubStyle: true
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"
+  minimap: {}
+  "multi-wrap-guide":
+    columns: [
+      49
+      71
+      79
+      139
+    ]
+    locked: true
+  pigments: {}
+  "plantuml-preview":
+    dotLocation: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
+    jarLocation: "/Users/jfriesen/bin/plantuml.jar"
+  "plantuml-viewer":
+    graphvizDotExecutable: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
+  "project-ring": {}
+  "rails-rspec": {}
+  "ruby-block":
+    highlightLineNumber: true
+  "sourcegraph-atom": {}
+  "status-bar": {}
+  "symbols-tree-view":
+    autoToggle: true
+  "tab-numbers": {}
+  tabs:
+    enableVcsColoring: true
+  "terminal-status": {}
+  "tool-bar":
+    iconSize: "16px"
+    visible: false
+  "trailing-spaces":
+    enableForCursorLines: true
+    enableForIndentation: true
+  "travis-ci-status": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "tree-view-git-status": {}
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+  wordcount:
+    noextension: true
+".diff.source":
+  editor:
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140
+".erb.html.text":
+  editor:
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140
+".git.source":
+  editor:
+    preferredLineLength: 72
+".plantuml":
+  editor:
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140
+".rspec.ruby.source":
+  editor:
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140
+".ruby.source":
+  editor:
+    nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+    preferredLineLength: 140

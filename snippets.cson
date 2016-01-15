@@ -1,0 +1,17 @@
+'.source.ruby':
+  'byebug':
+    'prefix': 'db'
+    'body': "require 'byebug'; debugger; true"
+  'Kernel byebug':
+    'prefix': 'kdb'
+    'body': "::Kernel.require 'byebug'; Kernel.debugger; true"
+  'pry':
+     'prefix': 'pry'
+     'body': "require 'pry'; binding.pry"
+  '.call convenience (Ruby)':
+     'prefix': 'callcon'
+     'body': "# A convenience method for constructing and calling this function.\ndef self.call(**keywords, &block)\n  new(**keywords, &block).call\nend\n"
+'.source.rspec':
+  '.call convenience (RSpec)':
+     'prefix': 'callcon'
+     'body': "it 'exposes .call as a convenience method' do\n  expect_any_instance_of(described_class).to receive(:call)\n  described_class.call($1)\nend\n"

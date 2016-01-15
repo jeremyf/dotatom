@@ -1,0 +1,30 @@
+cogitate:
+  title: "cogitate"
+  paths: [
+    "/Users/jfriesen/Repositories/cogitate"
+  ]
+commitment:
+  title: "commitment"
+  paths: [
+    "/Users/jfriesen/Repositories/commitment"
+  ]
+sipity:
+  title: "sipity"
+  paths: [
+    "/Users/jfriesen/Repositories/sipity"
+  ]
+"cogitate-client":
+  title: "cogitate-client"
+  paths: [
+    "/Users/jfriesen/Repositories/cogitate-client"
+  ]
+curate_nd:
+  title: "curate_nd"
+  paths: [
+    "/Users/jfriesen/Repositories/curate_nd"
+  ]
+curate:
+  title: "curate"
+  paths: [
+    "/Users/jfriesen/Repositories/curate"
+  ]

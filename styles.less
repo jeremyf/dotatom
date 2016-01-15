@@ -1,0 +1,25 @@
+.indent-guide-improved {
+  background-color: rgba(33,33,33,0.5);
+  &.indent-guide-stack {
+    background-color: rgba(33,33,33,0.5);
+    &.indent-guide-active {
+      background-color: rgba(33,33,33, 0.5);
+    }
+  }
+}
+
+:host, atom-text-editor, atom-text-editor::shadow {
+  .line-number.ruby-block-highlight {
+    background-color: rgba(248,187,19,0.2);
+  }
+
+  .highlights {
+    .ruby-block-highlight .region {
+      background-color: rgba(248,187,19,0.2);
+    }
+  }
+
+  .cursor-line, .highlight-line-multi-line-solid-bottom {
+    border-bottom-color: rgba(248,187,19,0.8) !important;
+  }
+}
