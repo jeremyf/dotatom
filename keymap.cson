@@ -19,3 +19,4 @@
   'ctrl-alt-cmd-z': 'zen:toggle'
   'ctrl-k': 'editor:delete-to-end-of-line'
   'shift-ctrl-i': 'window:toggle-invisibles'
+  'ctrl-alt-cmd-w': 'tabs:close-other-tabs'

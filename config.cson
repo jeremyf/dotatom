@@ -1,9 +1,63 @@
 "*":
   Zen: {}
   "atom-beautify":
-    language_php_disabled: true
-    language_python_disabled: true
-    language_ruby_default_beautifier: "Ruby Beautify"
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "be29c347-f4d6-47fb-86b8-c7f9f5699c2a"
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    jade: {}
+    java: {}
+    js:
+      indent_size: 2
+      keep_array_indentation: true
+    json:
+      end_with_newline: true
+      indent_size: 2
+      unescape_strings: true
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php:
+      disabled: true
+    python:
+      disabled: true
+    riot: {}
+    ruby:
+      default_beautifier: "Ruby Beautify"
+      indent_size: 2
+      rubocop_path: "/usr/local/bin/ruby-beautify"
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
   "atom-ctags":
     autoBuildTagsWhenActive: true
   "atom-pair":
@@ -49,6 +103,7 @@
     preferredFormat: "HEX"
     randomColor: false
   core:
+    audioBeep: false
     disabledPackages: [
       "language-make"
       "language-mustache"
@@ -70,7 +125,6 @@
       "chary-tree-view"
       "block-cursor"
       "jsonlint"
-      "atom-pair"
       "cargo-test-runner"
       "git-log"
       "language-rust"
@@ -111,6 +165,7 @@
     ]
   "ctags-status": {}
   editor:
+    backUpBeforeSaving: true
     fontFamily: "Mensch-Regular"
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
@@ -157,6 +212,7 @@
     jarLocation: "/Users/jfriesen/bin/plantuml.jar"
   "plantuml-viewer":
     graphvizDotExecutable: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
+  "pretty-json": {}
   "project-ring": {}
   "rails-rspec": {}
   "ruby-block":
@@ -192,6 +248,7 @@
   editor:
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
+    showIndentGuide: false
 ".git.source":
   editor:
     preferredLineLength: 72
@@ -207,3 +264,4 @@
   editor:
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
+    showIndentGuide: false

@@ -28,3 +28,8 @@ curate:
   paths: [
     "/Users/jfriesen/Repositories/curate"
   ]
+firehose:
+  title: "firehose"
+  paths: [
+    "/Users/jfriesen/Repositories/firehose"
+  ]
