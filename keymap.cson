@@ -4,10 +4,14 @@
   'ctrl-cmd-z': 'unset!'
 'atom-text-editor':
   'ctrl-k': 'unset!'
+  'cmd-h': 'unset!'
+'.platform-darwin atom-workspace':
+  'cmd-k cmd-c': 'git-plus:commit'
 'atom-workspace':
   'ctrl-cmd-z': 'native!'
   'cmd-k cmd-c': 'git-plus:commit'
   'cmd-k cmd-a': 'git-plus:add'
+  'cmd-k cmd-z': 'git-plus:add-all'
   'cmd-k cmd-z': 'git-plus:add-all'
   'cmd-k cmd-s': 'git-plus:status'
   'cmd-k cmd-p': 'git-plus:push'
@@ -21,3 +25,9 @@
   'shift-ctrl-i': 'window:toggle-invisibles'
   'ctrl-alt-cmd-w': 'tabs:close-other-tabs'
   'ctrl-alt-cmd-d': 'graphviz-preview:toggle'
+  'cmd-h cmd-u': 'change-case:upper'
+  'cmd-h cmd-l': 'change-case:lower'
+  'cmd-h cmd-c': 'change-case:pascal'
+  'cmd-h cmd-k': 'change-case:camel'
+  'cmd-h cmd-s': 'change-case:snake'
+  'cmd-y': 'yard:create'

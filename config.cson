@@ -147,7 +147,6 @@
       "incremental-search"
       "atom-spec-finder"
       "markdown-pdf"
-      "tidy-markdown"
     ]
     ignoredNames: [
       ".git"
@@ -162,6 +161,7 @@
     packagesWithKeymapsDisabled: [
       "graphviz-preview"
     ]
+    projectHome: "/Users/jfriesen/git"
     themes: [
       "unity-ui"
       "ruby-blue-syntax"
@@ -170,6 +170,7 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "Mensch-Regular"
+    fontSize: 13
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -239,6 +240,9 @@
     toggles:
       autoClose: true
   "terminal-status": {}
+  "tidy-markdown":
+    ensureFirstHeaderIsH1: false
+    runOnSave: false
   "tool-bar":
     iconSize: "16px"
     visible: false
