@@ -1,7 +1,7 @@
 '.platform-darwin atom-workspace atom-text-editor:not(.mini)':
-  'ctrl-cmd-z': 'unset!'
+  'ctrl-cmd-z': 'native!'
 '.platform-darwin atom-workspace':
-  'ctrl-cmd-z': 'unset!'
+  'ctrl-cmd-z': 'native!'
 'atom-text-editor':
   'ctrl-k': 'unset!'
   'cmd-h': 'unset!'

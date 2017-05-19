@@ -1,5 +1,9 @@
 "*":
-  Zen: {}
+  Zen:
+    gutter: true
+    showWordCount: "Right"
+    softWrap: true
+    typewriter: true
   "atom-beautify":
     apex: {}
     arduino: {}
@@ -59,8 +63,25 @@
     xtemplate: {}
   "atom-ctags":
     autoBuildTagsWhenActive: true
+  "atom-material-ui":
+    colors:
+      abaseColor: "#ebebeb"
+      accentColor: "#f9f6f6"
+      genAccent: true
+    fonts:
+      fontSize: 13
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   "atom-pair":
     hipchat_room_name: "DLT"
+  "auto-run":
+    commands: [
+      "atomenv:load"
+    ]
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-ctags":
@@ -73,28 +94,12 @@
   "block-cursor":
     global:
       blinkOff:
-        backgroundColor:
-          alpha: 0
-          blue: 0
-          green: 0
-          red: 0
-        borderColor:
-          alpha: 0.55
-          blue: 45
-          green: 194
-          red: 234
+        backgroundColor: "rgba(0, 0, 0, 0)"
+        borderColor: "rgba(234, 194, 45, 0.55)"
         borderStyle: "bordered-box"
       blinkOn:
-        backgroundColor:
-          alpha: 0.55
-          blue: 45
-          green: 194
-          red: 234
-        borderColor:
-          alpha: 0
-          blue: 0
-          green: 0
-          red: 0
+        backgroundColor: "rgba(234, 194, 45, 0.55)"
+        borderColor: "rgba(0, 0, 0, 0)"
         borderStyle: "none"
         borderWidth: 0
       cursorLineFix: true
@@ -103,6 +108,7 @@
     randomColor: false
   core:
     audioBeep: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "language-make"
       "language-mustache"
@@ -121,7 +127,6 @@
       "linter-rubocop"
       "git-blame-plus"
       "chary-tree-view"
-      "block-cursor"
       "jsonlint"
       "cargo-test-runner"
       "git-log"
@@ -129,7 +134,6 @@
       "racer"
       "rust-api-docs-helper"
       "tree-view-git-modified"
-      "wrap-guide"
       "wrap-guide"
       "linter-rust"
       "merge-conflicts"
@@ -147,6 +151,15 @@
       "incremental-search"
       "atom-spec-finder"
       "markdown-pdf"
+      "gofmt"
+      "tester-go"
+      "autocomplete-go"
+      "gometalinter-linter"
+      "block-cursor"
+      "atom-pair"
+      "go-debug"
+      "hyperclick"
+      "the-closer"
     ]
     ignoredNames: [
       ".git"
@@ -162,6 +175,7 @@
       "graphviz-preview"
     ]
     projectHome: "/Users/jfriesen/git"
+    telemetryConsent: "limited"
     themes: [
       "unity-ui"
       "ruby-blue-syntax"
@@ -174,7 +188,16 @@
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
+    scrollPastEnd: true
     showInvisibles: true
+    softWrapHangingIndent: 20
+  "env-from-shell":
+    debug: true
+    variables: [
+      "PATH"
+      "GOPATH"
+      "GOROOT"
+    ]
   "exception-reporting":
     userId: "3d6d5bc2-8a42-8d9a-1a35-e7bbbb8ff132"
   "gist-it":
@@ -183,7 +206,11 @@
   "git-diff":
     showIconsInEditorGutter: true
   "git-history": {}
-  "git-plus": {}
+  "git-plus":
+    general:
+      _analyticsUserId: "1c320c08-662c-4e93-9346-7e1680ea9657"
+  "go-plus":
+    panelDisplayMode: "closed"
   "highlight-line":
     enableBackgroundColor: false
     enableSelectionBorder: true
@@ -192,13 +219,19 @@
     fontSize: 0.8
     highContrast: true
   "keyboard-scroll": {}
-  linter:
-    showErrorTabLine: true
+  linter: {}
   "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/usr/local/bin/ruby"
+  "linter-ui-default":
+    panelHeight: 81
+  "linter-write-good":
+    additionalArgs: "--yes-eprime"
+    severityLevel: "Warning"
   "markdown-preview":
     useGitHubStyle: true
+  "markdown-writer":
+    fileExtension: ".md"
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
   minimap: {}
@@ -210,6 +243,12 @@
       139
     ]
     locked: true
+    rows: [
+      50
+      72
+      80
+      140
+    ]
   pigments: {}
   "plantuml-preview":
     dotLocation: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
@@ -282,3 +321,5 @@
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
     showIndentGuide: false
+"the-closer":
+  closeWindowTogetherWithLastTab: true

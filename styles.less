@@ -8,7 +8,7 @@
   }
 }
 
-:host, atom-text-editor, atom-text-editor::shadow {
+:host, atom-text-editor, atom-text-editor.editor {
   .line-number.ruby-block-highlight {
     background-color: rgba(248,187,19,0.2);
   }
@@ -21,5 +21,18 @@
 
   .cursor-line, .highlight-line-multi-line-solid-bottom {
     border-bottom-color: rgba(248,187,19,0.8) !important;
+  }
+}
+
+atom-text-editor.editor {
+  .multi-wrap-guide:nth-child(1) .multi-wrap-guide-line,
+  .multi-wrap-guide:nth-child(2) .multi-wrap-guide-line,
+  .multi-wrap-guide:nth-child(3) .multi-wrap-guide-line {
+    background-color: fadeout(green, 70%);
+    width: 1px;
+  }
+  .multi-wrap-guide:nth-child(4) .multi-wrap-guide-line {
+    background-color: fadeout(red, 60%);
+    width: 1px;
   }
 }
