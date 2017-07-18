@@ -235,6 +235,9 @@
     severityLevel: "Warning"
   "markdown-preview":
     useGitHubStyle: true
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    useGitHubStyle: true
   "markdown-writer":
     fileExtension: ".md"
   "merge-conflicts":

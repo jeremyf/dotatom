@@ -60,6 +60,7 @@
   "linter-ui-default",
   "linter-write-good",
   "markdown-pdf",
+  "markdown-preview-plus",
   "markdown-scroll-sync",
   "markdown-writer",
   "mate-subword-navigation",
