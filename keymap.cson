@@ -2,11 +2,10 @@
   'ctrl-cmd-z': 'native!'
 '.platform-darwin atom-workspace':
   'ctrl-cmd-z': 'native!'
+  'ctrl-t': 'unset!'
+  'cmd-alt-t': 'term3:open'
 'atom-text-editor':
-  'ctrl-k': 'unset!'
   'cmd-h': 'unset!'
-'.platform-darwin atom-workspace':
-  'cmd-k cmd-c': 'git-plus:commit'
 'atom-workspace':
   'ctrl-cmd-z': 'native!'
   'cmd-k cmd-c': 'git-plus:commit'
@@ -21,7 +20,6 @@
   'cmd-ctrl-w': 'tabs:close-all-tabs'
   'ctrl-w': 'editor:select-word'
   'ctrl-alt-cmd-z': 'zen:toggle'
-  'ctrl-k': 'editor:delete-to-end-of-line'
   'shift-ctrl-i': 'window:toggle-invisibles'
   'ctrl-alt-cmd-w': 'tabs:close-other-tabs'
   'ctrl-alt-cmd-d': 'graphviz-preview:toggle'

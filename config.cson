@@ -159,7 +159,7 @@
       "atom-pair"
       "go-debug"
       "hyperclick"
-      "the-closer"
+      "terminal-plus"
     ]
     ignoredNames: [
       ".git"
@@ -170,14 +170,16 @@
       "Thumbs.db"
       "tags"
       ".tag*"
+      ".log"
     ]
     packagesWithKeymapsDisabled: [
       "graphviz-preview"
+      "term3"
     ]
     projectHome: "/Users/jfriesen/git"
     telemetryConsent: "limited"
     themes: [
-      "unity-ui"
+      "pristine-ui"
       "ruby-blue-syntax"
     ]
   "ctags-status": {}
@@ -219,12 +221,15 @@
     fontSize: 0.8
     highContrast: true
   "keyboard-scroll": {}
-  linter: {}
+  linter:
+    disabledProviders: [
+      "write-good"
+    ]
   "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/usr/local/bin/ruby"
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 69
   "linter-write-good":
     additionalArgs: "--yes-eprime"
     severityLevel: "Warning"
@@ -266,6 +271,7 @@
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
     syncHorizontalScroll: true
   "status-bar": {}
   "symbols-tree-view":
@@ -273,6 +279,9 @@
   "tab-numbers": {}
   tabs:
     enableVcsColoring: true
+  term3:
+    colors: {}
+    shellArguments: "--init-file /Users/jfriesen/.profile"
   "terminal-plus":
     core:
       shell: "/bin/bash"
