@@ -6,3 +6,10 @@ compile-cache
 .git-history
 blob-store
 packages
+.atomenv.json
+git-time-machine/
+github.cson
+markdown-writer-links.cson
+package-deps-state.json
+recovery/
+split-diff/
