@@ -1,35 +1,50 @@
-cogitate:
-  title: "cogitate"
-  paths: [
-    "/Users/jfriesen/Repositories/cogitate"
-  ]
-commitment:
-  title: "commitment"
-  paths: [
-    "/Users/jfriesen/Repositories/commitment"
-  ]
-sipity:
-  title: "sipity"
-  paths: [
-    "/Users/jfriesen/Repositories/sipity"
-  ]
-"cogitate-client":
-  title: "cogitate-client"
-  paths: [
-    "/Users/jfriesen/Repositories/cogitate-client"
-  ]
-curate_nd:
-  title: "curate_nd"
-  paths: [
-    "/Users/jfriesen/Repositories/curate_nd"
-  ]
-curate:
-  title: "curate"
-  paths: [
-    "/Users/jfriesen/Repositories/curate"
-  ]
-firehose:
-  title: "firehose"
-  paths: [
-    "/Users/jfriesen/Repositories/firehose"
-  ]
+[
+  {
+    title: "bookreader"
+    paths: [
+      "/Users/jfriesen/git/bookreader"
+    ]
+  }
+  {
+    title: "cogitate"
+    paths: [
+      "/Users/jfriesen/git/cogitate"
+    ]
+  }
+  {
+    title: "commitment"
+    paths: [
+      "/Users/jfriesen/git/commitment"
+    ]
+  }
+  {
+    title: "sipity"
+    paths: [
+      "/Users/jfriesen/git/sipity"
+    ]
+  }
+  {
+    title: "cogitate-client"
+    paths: [
+      "/Users/jfriesen/git/cogitate-client"
+    ]
+  }
+  {
+    title: "curate_nd"
+    paths: [
+      "/Users/jfriesen/git/curate_nd"
+    ]
+  }
+  {
+    title: "curate"
+    paths: [
+      "/Users/jfriesen/git/curate"
+    ]
+  }
+  {
+    title: "firehose"
+    paths: [
+      "/Users/jfriesen/git/firehose"
+    ]
+  }
+]

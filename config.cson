@@ -78,6 +78,7 @@
       panelShadows: true
   "atom-pair":
     hipchat_room_name: "DLT"
+  "atom-password-generator": {}
   "auto-run":
     commands: [
       "atomenv:load"
@@ -121,7 +122,6 @@
       "language-clojure"
       "language-c"
       "project-ring"
-      "sourcegraph-atom"
       "go-to-spec"
       "multi-cursor-plus"
       "linter-rubocop"
@@ -131,20 +131,14 @@
       "cargo-test-runner"
       "git-log"
       "language-rust"
-      "racer"
-      "rust-api-docs-helper"
       "tree-view-git-modified"
       "wrap-guide"
       "linter-rust"
       "merge-conflicts"
-      "travis-ci-status"
-      "terminal-status"
       "autocomplete"
       "autocomplete-ruby"
       "ctags-status"
-      "symbols-tree-view"
       "pigments"
-      "keyboard-scroll"
       "color-picker"
       "autocomplete-ctags"
       "atom-ctags"
@@ -158,8 +152,8 @@
       "block-cursor"
       "atom-pair"
       "go-debug"
-      "hyperclick"
-      "terminal-plus"
+      "symbols-tree-view"
+      "git-diff"
     ]
     ignoredNames: [
       ".git"
@@ -182,11 +176,11 @@
       "pristine-ui"
       "ruby-blue-syntax"
     ]
+    warnOnLargeFileLimit: 4
   "ctags-status": {}
   editor:
     backUpBeforeSaving: true
     fontFamily: "Mensch-Regular"
-    fontSize: 13
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -203,6 +197,7 @@
   "exception-reporting":
     userId: "3d6d5bc2-8a42-8d9a-1a35-e7bbbb8ff132"
   "gist-it":
+    openAfterCreate: true
     userToken: "5ae4c6ca80b970dea795202842988b3f73a0c062"
   "git-blame-plus": {}
   "git-diff":
@@ -228,8 +223,7 @@
   "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/usr/local/bin/ruby"
-  "linter-ui-default":
-    panelHeight: 69
+  "linter-ui-default": {}
   "linter-write-good":
     additionalArgs: "--yes-eprime"
     severityLevel: "Warning"
@@ -249,6 +243,7 @@
       71
       79
       139
+      199
     ]
     locked: true
     rows: [
@@ -256,6 +251,7 @@
       72
       80
       140
+      200
     ]
   pigments: {}
   "plantuml-preview":
@@ -301,7 +297,8 @@
     enableForCursorLines: true
     enableForIndentation: true
   "travis-ci-status": {}
-  "tree-view": {}
+  "tree-view":
+    hideIgnoredNames: true
   "tree-view-git-status": {}
   "vim-mode": {}
   welcome:
