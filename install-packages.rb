@@ -22,6 +22,7 @@
   "ctags-status",
   "dash-ui",
   "diff-pane",
+  "document-outline",
   "execute-as-ruby",
   "file-icons",
   "gist-it",

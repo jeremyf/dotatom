@@ -76,6 +76,8 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "atom-package-deps":
+    ignored: []
   "atom-pair":
     hipchat_room_name: "DLT"
   "atom-password-generator": {}
@@ -140,8 +142,6 @@
       "ctags-status"
       "pigments"
       "color-picker"
-      "autocomplete-ctags"
-      "atom-ctags"
       "incremental-search"
       "atom-spec-finder"
       "markdown-pdf"
@@ -154,6 +154,7 @@
       "go-debug"
       "symbols-tree-view"
       "git-diff"
+      "markdown-preview"
     ]
     ignoredNames: [
       ".git"
@@ -164,7 +165,7 @@
       "Thumbs.db"
       "tags"
       ".tag*"
-      ".log"
+      ".log .pdf .rtf"
     ]
     packagesWithKeymapsDisabled: [
       "graphviz-preview"
@@ -216,21 +217,20 @@
     fontSize: 0.8
     highContrast: true
   "keyboard-scroll": {}
-  linter:
-    disabledProviders: [
-      "write-good"
-    ]
+  linter: {}
   "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/usr/local/bin/ruby"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 81
   "linter-write-good":
     additionalArgs: "--yes-eprime"
     severityLevel: "Warning"
   "markdown-preview":
     useGitHubStyle: true
   "markdown-preview-plus":
-    enableLatexRenderingByDefault: true
+    mathConfig:
+      enableLatexRenderingByDefault: true
     useGitHubStyle: true
   "markdown-writer":
     fileExtension: ".md"
