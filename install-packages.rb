@@ -3,6 +3,7 @@
   "apex-ui",
   "atom-beautify",
   "atom-ctags",
+  "atom-ide-ui",
   "atom-material-syntax",
   "atom-material-ui",
   "atom-mermaid",
