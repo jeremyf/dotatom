@@ -112,6 +112,7 @@
   core:
     audioBeep: false
     closeDeletedFileTabs: true
+    closeEmptyWindows: false
     disabledPackages: [
       "language-make"
       "language-mustache"
@@ -135,7 +136,6 @@
       "language-rust"
       "tree-view-git-modified"
       "wrap-guide"
-      "linter-rust"
       "merge-conflicts"
       "autocomplete"
       "autocomplete-ruby"
@@ -154,7 +154,31 @@
       "go-debug"
       "symbols-tree-view"
       "git-diff"
+      "markdown-scroll-sync"
+      "teletype"
+      "project-manager"
+      "document-outline"
+      "atom-ide-console"
+      "atom-ide-ui"
+      "ide-yaml"
+      "ide-json"
+      "plantuml-viewer"
+      "language-latex"
+      "intentions"
+      "go-oracle"
+      "jekyll"
+      "jekyll-syntax-highlighting"
+      "language-liquid"
+      "latex"
+      "language-gfm"
       "markdown-preview"
+      "go-plus"
+      "atom-liquid-snippets"
+      "blame"
+      "docker"
+      "language-docker"
+      "ruby-bundler"
+      "tetromino"
     ]
     ignoredNames: [
       ".git"
@@ -163,9 +187,15 @@
       ".DS_Store"
       "._*"
       "Thumbs.db"
-      "tags"
       ".tag*"
-      ".log .pdf .rtf"
+      "*.log"
+      "*.pdf"
+      "*.rtf"
+      "*.jpg"
+      "*.png"
+      "*.svg"
+      "*.jpeg"
+      "bundle"
     ]
     packagesWithKeymapsDisabled: [
       "graphviz-preview"
@@ -177,11 +207,13 @@
       "pristine-ui"
       "ruby-blue-syntax"
     ]
+    uriHandlerRegistration: "always"
     warnOnLargeFileLimit: 4
   "ctags-status": {}
   editor:
     backUpBeforeSaving: true
-    fontFamily: "Mensch-Regular"
+    fontFamily: "mensch-regular"
+    fontSize: 16
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -205,27 +237,66 @@
     showIconsInEditorGutter: true
   "git-history": {}
   "git-plus":
+    diffs:
+      useSplitDiff: true
+      wordDiff: true
     general:
       _analyticsUserId: "1c320c08-662c-4e93-9346-7e1680ea9657"
+    remoteInteractions:
+      pullBeforePush: true
+      pullRebase: true
   "go-plus":
     panelDisplayMode: "closed"
   "highlight-line":
-    enableBackgroundColor: false
     enableSelectionBorder: true
+    enableUnderline: true
     hideHighlightOnSelect: true
   jumpy:
     fontSize: 0.8
     highContrast: true
   "keyboard-scroll": {}
   linter: {}
+  "linter-proselint":
+    enabledScopes: [
+      "source.gfm"
+      "source.pfm"
+      "source.md"
+      "text.plain"
+      "text.tex.latex"
+      "text.tex.latex.beamer"
+      "text.tex.latex.memoir"
+      "source.asciidoc"
+      "text.restructuredtext"
+      "text.html.hugo"
+    ]
   "linter-rubocop": {}
   "linter-ruby":
     rubyExecutablePath: "/usr/local/bin/ruby"
   "linter-ui-default":
-    panelHeight: 81
+    alwaysTakeMinimumSpace: true
+    gutterPosition: "Left"
+    panelHeight: 159
+    showProviderName: true
+    statusBarClickBehavior: "Jump to next issue"
+    statusBarRepresents: "Current File"
+  "linter-ui-plus":
+    statusBarPosition: "Right"
   "linter-write-good":
-    additionalArgs: "--yes-eprime"
-    severityLevel: "Warning"
+    additionalArgs: "--no-passive"
+    enabledScopes: [
+      "source.gfm"
+      "source.pfm"
+      "source.md"
+      "text.plain"
+      "text.tex.latex"
+      "text.tex.latex.beamer"
+      "text.tex.latex.memoir"
+      "source.asciidoc"
+      "text.restructuredtext"
+      "text.html.hugo"
+      "text.md"
+    ]
+    severityLevel: "Info"
   "markdown-preview":
     useGitHubStyle: true
   "markdown-preview-plus":
@@ -255,16 +326,29 @@
     ]
   pigments: {}
   "plantuml-preview":
-    dotLocation: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
-    jarLocation: "/Users/jfriesen/bin/plantuml.jar"
+    dotLocation: "/usr/local/Cellar/graphviz/2.40.1/Graphviz.app/Contents/MacOS/Graphviz"
+    jarLocation: "/Users/jfriesen/bin/plantuml.1.2018.10.jar"
+    useTempDir: false
   "plantuml-viewer":
-    graphvizDotExecutable: "/Applications/Graphviz.app/Contents/MacOS/Graphviz"
+    graphvizDotExecutable: "/usr/local/Cellar/graphviz/2.40.1/Graphviz.app/Contents/MacOS/Graphviz"
   "pretty-json": {}
   "project-ring": {}
   "rails-rspec": {}
   "ruby-block":
     highlightLineNumber: true
   "sourcegraph-atom": {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.html.hugo"
+      "text.md"
+    ]
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
@@ -299,12 +383,16 @@
   "travis-ci-status": {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "tree-view-git-status": {}
   "vim-mode": {}
   welcome:
     showOnStartup: false
   wordcount:
     noextension: true
+".css.liquid.scss.source":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
 ".diff.source":
   editor:
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
@@ -317,6 +405,16 @@
 ".git.source":
   editor:
     preferredLineLength: 72
+".html.hugo.text":
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+".html.liquid.text":
+  editor:
+    showIndentGuide: true
+    softWrap: true
 ".plantuml":
   editor:
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"

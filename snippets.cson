@@ -15,3 +15,11 @@
   '.call convenience (RSpec)':
      'prefix': 'callcon'
      'body': "it 'exposes .call as a convenience method' do\n  expect_any_instance_of(described_class).to receive(:call)\n  described_class.call($1)\nend\n"
+'*':
+  'insert Time':
+    'prefix': 'time'
+    'body': "require 'time'; Time.now"
+  'insert Smart Quotes':
+    'prefix': '"'
+    'description': "Expand a quote into a wrapping smart quote"
+    'body': "“$1”"
