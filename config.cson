@@ -63,6 +63,9 @@
     xtemplate: {}
   "atom-ctags":
     autoBuildTagsWhenActive: true
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   "atom-material-ui":
     colors:
       abaseColor: "#ebebeb"
@@ -112,7 +115,6 @@
   core:
     audioBeep: false
     closeDeletedFileTabs: true
-    closeEmptyWindows: false
     disabledPackages: [
       "language-make"
       "language-mustache"
@@ -151,7 +153,6 @@
       "gometalinter-linter"
       "block-cursor"
       "atom-pair"
-      "go-debug"
       "symbols-tree-view"
       "git-diff"
       "markdown-scroll-sync"
@@ -159,26 +160,26 @@
       "project-manager"
       "document-outline"
       "atom-ide-console"
-      "atom-ide-ui"
       "ide-yaml"
       "ide-json"
       "plantuml-viewer"
       "language-latex"
       "intentions"
-      "go-oracle"
       "jekyll"
       "jekyll-syntax-highlighting"
       "language-liquid"
       "latex"
       "language-gfm"
       "markdown-preview"
-      "go-plus"
       "atom-liquid-snippets"
       "blame"
       "docker"
       "language-docker"
       "ruby-bundler"
       "tetromino"
+      "language-hugo"
+      "linter"
+      "go-rename"
     ]
     ignoredNames: [
       ".git"
@@ -212,8 +213,7 @@
   "ctags-status": {}
   editor:
     backUpBeforeSaving: true
-    fontFamily: "mensch-regular"
-    fontSize: 16
+    fontFamily: "\"JetBrains Mono\", Mensch"
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -229,6 +229,9 @@
     ]
   "exception-reporting":
     userId: "3d6d5bc2-8a42-8d9a-1a35-e7bbbb8ff132"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "gist-it":
     openAfterCreate: true
     userToken: "5ae4c6ca80b970dea795202842988b3f73a0c062"
@@ -247,6 +250,7 @@
       pullRebase: true
   "go-plus":
     panelDisplayMode: "closed"
+  "go-rename": {}
   "highlight-line":
     enableSelectionBorder: true
     enableUnderline: true
@@ -271,18 +275,19 @@
     ]
   "linter-rubocop": {}
   "linter-ruby":
-    rubyExecutablePath: "/usr/local/bin/ruby"
+    rubyExecutablePath: "/Users/jfriesen/.rbenv/shims/ruby"
   "linter-ui-default":
     alwaysTakeMinimumSpace: true
     gutterPosition: "Left"
     panelHeight: 159
+    showPanel: true
     showProviderName: true
     statusBarClickBehavior: "Jump to next issue"
     statusBarRepresents: "Current File"
   "linter-ui-plus":
     statusBarPosition: "Right"
   "linter-write-good":
-    additionalArgs: "--no-passive"
+    additionalArgs: "--no-passive --yes-eprime"
     enabledScopes: [
       "source.gfm"
       "source.pfm"
@@ -293,10 +298,10 @@
       "text.tex.latex.memoir"
       "source.asciidoc"
       "text.restructuredtext"
+      "text.html.basic"
       "text.html.hugo"
       "text.md"
     ]
-    severityLevel: "Info"
   "markdown-preview":
     useGitHubStyle: true
   "markdown-preview-plus":
@@ -326,11 +331,14 @@
     ]
   pigments: {}
   "plantuml-preview":
-    dotLocation: "/usr/local/Cellar/graphviz/2.40.1/Graphviz.app/Contents/MacOS/Graphviz"
-    jarLocation: "/Users/jfriesen/bin/plantuml.1.2018.10.jar"
+    dotLocation: "/usr/local/Cellar/graphviz/2.40.1_1/bin/dot"
+    jarLocation: "/Users/jfriesen/bin/plantuml.1.2019.10.jar"
     useTempDir: false
   "plantuml-viewer":
     graphvizDotExecutable: "/usr/local/Cellar/graphviz/2.40.1/Graphviz.app/Contents/MacOS/Graphviz"
+  "platformio-ide-terminal":
+    core:
+      shellArguments: "--init-file /Users/jfriesen/.profile"
   "pretty-json": {}
   "project-ring": {}
   "rails-rspec": {}
@@ -365,18 +373,12 @@
   term3:
     colors: {}
     shellArguments: "--init-file /Users/jfriesen/.profile"
-  "terminal-plus":
-    core:
-      shell: "/bin/bash"
-    toggles:
-      autoClose: true
   "terminal-status": {}
   "tidy-markdown":
     ensureFirstHeaderIsH1: false
     runOnSave: false
   "tool-bar":
     iconSize: "16px"
-    visible: false
   "trailing-spaces":
     enableForCursorLines: true
     enableForIndentation: true
@@ -390,6 +392,7 @@
     showOnStartup: false
   wordcount:
     noextension: true
+  yard: {}
 ".css.liquid.scss.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
