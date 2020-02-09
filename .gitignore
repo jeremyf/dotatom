@@ -4,6 +4,7 @@ compile-cache
 .npm
 .apm
 .git-history
+.atom-socket*
 blob-store
 packages
 .atomenv.json

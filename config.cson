@@ -213,7 +213,8 @@
   "ctags-status": {}
   editor:
     backUpBeforeSaving: true
-    fontFamily: "\"JetBrains Mono\", Mensch"
+    fontFamily: "\"JetBrains Mono\", \"Hack Nerd Font\", Menlo"
+    fontSize: 16
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
