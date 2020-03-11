@@ -20,6 +20,6 @@
     'prefix': 'time'
     'body': "require 'time'; Time.now"
   'insert Smart Quotes':
-    'prefix': '"'
+    'prefix': 'smq'
     'description': "Expand a quote into a wrapping smart quote"
     'body': "“$1”"

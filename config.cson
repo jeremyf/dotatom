@@ -177,9 +177,10 @@
       "language-docker"
       "ruby-bundler"
       "tetromino"
-      "language-hugo"
       "linter"
       "go-rename"
+      "language-go"
+      "language-hugo"
     ]
     ignoredNames: [
       ".git"
@@ -205,8 +206,8 @@
     projectHome: "/Users/jfriesen/git"
     telemetryConsent: "limited"
     themes: [
-      "pristine-ui"
-      "ruby-blue-syntax"
+      "atom-dark-ui"
+      "vibrant-ink-ruby"
     ]
     uriHandlerRegistration: "always"
     warnOnLargeFileLimit: 4
@@ -214,7 +215,7 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "\"JetBrains Mono\", \"Hack Nerd Font\", Menlo"
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -316,11 +317,11 @@
   minimap: {}
   "multi-wrap-guide":
     columns: [
-      49
-      71
-      79
-      139
-      199
+      50
+      70
+      80
+      140
+      200
     ]
     locked: true
     rows: [
