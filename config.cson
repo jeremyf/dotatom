@@ -156,7 +156,6 @@
       "symbols-tree-view"
       "git-diff"
       "markdown-scroll-sync"
-      "teletype"
       "project-manager"
       "document-outline"
       "atom-ide-console"
@@ -172,15 +171,16 @@
       "language-gfm"
       "markdown-preview"
       "atom-liquid-snippets"
-      "blame"
       "docker"
       "language-docker"
       "ruby-bundler"
       "tetromino"
       "linter"
       "go-rename"
-      "language-go"
+      "yard"
+      "language-ruby-without-erb"
       "language-hugo"
+      "teletype"
     ]
     ignoredNames: [
       ".git"
@@ -197,16 +197,17 @@
       "*.png"
       "*.svg"
       "*.jpeg"
-      "bundle"
+      "vendor/bundle"
     ]
     packagesWithKeymapsDisabled: [
       "graphviz-preview"
       "term3"
     ]
+    packagesWithSnippetsDisabled: []
     projectHome: "/Users/jfriesen/git"
     telemetryConsent: "limited"
     themes: [
-      "atom-dark-ui"
+      "one-dark-ui"
       "vibrant-ink-ruby"
     ]
     uriHandlerRegistration: "always"
@@ -215,7 +216,6 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "\"JetBrains Mono\", \"Hack Nerd Font\", Menlo"
-    fontSize: 17
     invisibles: {}
     nonWordCharacters: "/\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
     preferredLineLength: 140
@@ -242,6 +242,8 @@
     showIconsInEditorGutter: true
   "git-history": {}
   "git-plus":
+    commits:
+      verboseCommits: true
     diffs:
       useSplitDiff: true
       wordDiff: true
@@ -282,7 +284,6 @@
     alwaysTakeMinimumSpace: true
     gutterPosition: "Left"
     panelHeight: 159
-    showPanel: true
     showProviderName: true
     statusBarClickBehavior: "Jump to next issue"
     statusBarRepresents: "Current File"
@@ -333,8 +334,8 @@
     ]
   pigments: {}
   "plantuml-preview":
-    dotLocation: "/usr/local/Cellar/graphviz/2.40.1_1/bin/dot"
-    jarLocation: "/Users/jfriesen/bin/plantuml.1.2019.10.jar"
+    dotLocation: "/usr/local/Cellar/graphviz/2.42.3/bin/dot"
+    jarLocation: "/usr/local/Cellar/plantuml/1.2020.2/libexec/plantuml.jar"
     useTempDir: false
   "plantuml-viewer":
     graphvizDotExecutable: "/usr/local/Cellar/graphviz/2.40.1/Graphviz.app/Contents/MacOS/Graphviz"
@@ -394,7 +395,14 @@
     showOnStartup: false
   wordcount:
     noextension: true
-  yard: {}
+  yard:
+    addCommentLineAfterClassOrModuleDescription: true
+    addCommentLineAfterParams: true
+    addCommentLineAfterReturn: true
+    addCommentLineBeforeDescription: true
+    addCommentLineBeforeParams: true
+    addCommentLineBeforeReturn: true
+    ensureBlankLineBeforeDescription: true
 ".css.liquid.scss.source":
   editor:
     nonWordCharacters: "/\\()\"':,.;<>~!#%^&*|+=[]{}`?…"
