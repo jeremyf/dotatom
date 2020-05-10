@@ -23,4 +23,6 @@
     'prefix': 'smq'
     'description': "Expand a quote into a wrapping smart quote"
     'body': "“$1”"
-    
+  "in reply to":
+    "prefix": 'irt'
+    "body": '<a href="$1" class="u-in-reply-to" rel="in-reply-to">$2</a>'

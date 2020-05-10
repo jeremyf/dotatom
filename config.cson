@@ -181,6 +181,7 @@
       "language-ruby-without-erb"
       "language-hugo"
       "teletype"
+      "spell-check"
     ]
     ignoredNames: [
       ".git"
