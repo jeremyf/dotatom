@@ -97,6 +97,8 @@
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
   "autocomplete-ruby": {}
+  "base16-syntax":
+    scheme: "Google"
   "block-cursor":
     global:
       blinkOff:
@@ -181,7 +183,7 @@
       "language-ruby-without-erb"
       "language-hugo"
       "teletype"
-      "spell-check"
+      "language-go"
     ]
     ignoredNames: [
       ".git"
@@ -361,6 +363,10 @@
       "text.html.hugo"
       "text.md"
     ]
+    locales: [
+      "en-US"
+    ]
+    useLocales: false
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
